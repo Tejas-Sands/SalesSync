@@ -131,7 +131,7 @@ const Index = () => {
       <div className="flex flex-col md:flex-row">
         {/* Mobile header with menu toggle */}
         <div className={`md:hidden flex justify-between items-center p-4 sticky top-0 z-10 ${isDarkMode ? 'bg-gray-800 border-b border-gray-700 glass' : 'bg-white border-b border-gray-200 glass'}`}>
-          <h2 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'} gradient-text`}>SalesGlimpse</h2>
+          <h2 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'} gradient-text`}>SalesSync</h2>
           <div className="flex items-center space-x-2">
             <div className="flex items-center mr-4">
               <Sun className={`h-4 w-4 ${isDarkMode ? 'text-gray-400' : 'text-amber-500'}`} />
@@ -155,7 +155,7 @@ const Index = () => {
         {/* Sidebar */}
         <div className={`${isMobile ? (sidebarOpen ? 'fixed inset-y-0 left-0 z-40 w-72 transform translate-x-0' : 'fixed inset-y-0 left-0 z-40 w-72 transform -translate-x-full') : 'w-full md:w-64'} transition-transform duration-300 ease-in-out p-4 border-r ${isDarkMode ? 'border-gray-700 bg-gray-800 glass' : 'border-gray-200 bg-white glass'} md:h-screen`}>
           <div className="hidden md:flex items-center justify-between mb-6">
-            <h2 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'} gradient-text`}>SalesGlimpse</h2>
+            <h2 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'} gradient-text`}>SalesSync</h2>
             <div className="flex items-center space-x-2">
               <Sun className={`h-4 w-4 ${isDarkMode ? 'text-gray-400' : 'text-amber-500'}`} />
               <Switch checked={isDarkMode} onCheckedChange={toggleTheme} />
@@ -772,7 +772,7 @@ const Index = () => {
           
           {/* Footer with attribution */}
           <div className={`mt-8 pt-4 border-t ${isDarkMode ? 'border-gray-700 text-gray-400' : 'border-gray-200 text-gray-500'} flex items-center justify-between text-xs`}>
-            <p>© 2023 SalesGlimpse | Last updated: {new Date().toLocaleDateString()}</p>
+            <p>© 2023 SalesSync | Last updated: {new Date().toLocaleDateString()}</p>
             <div className="flex items-center space-x-4">
               <Button variant="ghost" size="sm" className="text-xs hover-scale" onClick={() => handleNavigation("Help")}>
                 Need Help?
